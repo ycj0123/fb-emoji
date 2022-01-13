@@ -2,3 +2,5 @@ test.py
 test.txt
 cookies
 __pycache__
+model
+*.csv

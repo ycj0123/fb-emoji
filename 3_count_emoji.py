@@ -9,11 +9,12 @@ def text_has_emoji(text):
 
 if __name__ == '__main__':
     count = 0
-    corpus = pd.read_csv('clean_corpus/ig5000.csv')
+    corpus = pd.read_csv('ig_unchanged.csv')
     posts = corpus['text'].to_list()
     print(len(posts))
     for i, post in enumerate(posts):
         # print(i)
         if text_has_emoji(post):
             count += 1
+    print(count)
     print(count/len(posts))
